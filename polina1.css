@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffe4e1; /* Светло-розовый фон */
-    color: #333; /* Цвет текста */
+    background-color: #ffe4e1; 
+    color: #333; 
 }
 
 header {
@@ -43,7 +43,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Добавляем отступ под фиксированный хедер */
+
 body {
     padding-top: 60px;
 }
@@ -62,7 +62,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Уменьшаем изображения */
+
 .profile-image {
     max-width: 70%; /* Уменьшено до 70% */
     height: auto;
@@ -90,14 +90,14 @@ body {
     gap: 20px;
 }
 
-/* Сетка для Blog */
+
 .blog-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-/* Контактная форма */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -158,14 +158,14 @@ body {
     }
 }
 .blog-image {
-    max-width: 100%; /* Уменьшено до 70% */
+    max-width: 100%; 
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
     display: block;
 }
 .blog-card {
-    max-width: 30%; /* Уменьшено до 70% */
+    max-width: 30%; 
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
@@ -173,14 +173,14 @@ body {
     
 }
 .blog-content {
-    max-width: 60%; /* Уменьшено до 70% */
+    max-width: 60%; 
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
     display: block;
     
 }
-.me-image { max-width: 400%; /* Уменьшено до 70% */
+.me-image { max-width: 400%; 
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
@@ -211,17 +211,17 @@ border-radius: 5px;}
 }
 
 
-/* Эффекты для кнопок */
+
 button:hover {
-    background-color: #ff69b4; /* Светло-розовый цвет кнопки */
-    color: white; /* Белый текст */
-    transform: scale(1.1); /* Увеличение кнопки */
-    transition: all 0.3s ease-in-out; /* Плавный переход */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    background-color: #ff69b4; 
+    color: white; 
+    transform: scale(1.1); 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 button {
-    background-color: #ffa6c9; /* Базовый цвет кнопки */
+    background-color: #ffa6c9; 
     color: #333;
     border: none;
     border-radius: 5px;
@@ -233,24 +233,24 @@ button {
 
 /* Эффекты для изображений проектов */
 img:hover {
-    transform: scale(1.05); /* Увеличение изображения */
-    transition: transform 0.3s ease-in-out; /* Плавный эффект увеличения */
-    filter: brightness(1.2); /* Увеличение яркости */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Добавление тени */
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(1.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Специфично для изображений проектов */
+
 .conteneur2 img:hover, .blog-container img:hover {
-    transform: scale(1.1); /* Большее увеличение для проектов */
+    transform: scale(1.1); 
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-    filter: brightness(1.2) contrast(1.1); /* Яркость и контрастность */
-    border: 3px solid violet; /* Фиолетовая рамка */
-    border-radius: 10px; /* Скругленные углы */
+    filter: brightness(1.2) contrast(1.1); 
+    border: 3px solid violet; 
+    border-radius: 10px; 
 }
 
-/* Эффекты для ссылок "Read More" */
+
 .read-more:hover {
-    color: #ff69b4; /* Изменение цвета текста */
-    text-decoration: underline; /* Добавление подчеркивания */
-    transform: scale(1.05); /* Легкое увеличение */
+    color: #ff69b4; 
+    text-decoration: underline; 
+    transform: scale(1.05); 
     transition: all 0.3s ease-in-out;}
