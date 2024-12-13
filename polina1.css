@@ -1,0 +1,256 @@
+/* Общий стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* Светло-розовый фон */
+    color: #333; /* Цвет текста */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 10;
+}
+#sec1 {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    width: 100vw;
+   height: 100vh;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Добавляем отступ под фиксированный хедер */
+body {
+    padding-top: 60px;
+}
+
+.Polina-cont {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container, .container1, .conteneur1, .conteneur5, .blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Белый фон для секций */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Уменьшаем изображения */
+.profile-image {
+    max-width: 70%; /* Уменьшено до 70% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Сетка для Services */
+.b123, .b456 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.b123 > div, .b456 > div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Сетка для Portfolio */
+.conteneur2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Сетка для Blog */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Контактная форма */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Адаптация для планшетов (ширина <= 768px) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b123, .b456 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .conteneur2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        max-width: 80%; /* Уменьшено для планшетов */
+    }
+}
+
+/* Адаптация для телефонов (ширина <= 480px) */
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Polina-cont {
+        padding: 20px;
+    }
+
+    .conteneur2 {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        max-width: 90%; /* Уменьшено для телефонов */
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 14px;
+    }
+}
+.blog-image {
+    max-width: 100%; /* Уменьшено до 70% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.blog-card {
+    max-width: 30%; /* Уменьшено до 70% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    
+}
+.blog-content {
+    max-width: 60%; /* Уменьшено до 70% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    
+}
+.me-image { max-width: 400%; /* Уменьшено до 70% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;}
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 70px;
+    }
+    #sec1 h1 {
+        color: rgb(40, 6, 59);
+    }
+#sec1 h2 { font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    font-size: 60px; color: rgb(10, 3, 65);
+background-color: blanchedalmond;
+border-radius: 5px;}
+.container7 {
+    text-align: center;
+    padding: 20px;
+}
+.contact-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Эффекты для кнопок */
+button:hover {
+    background-color: #ff69b4; /* Светло-розовый цвет кнопки */
+    color: white; /* Белый текст */
+    transform: scale(1.1); /* Увеличение кнопки */
+    transition: all 0.3s ease-in-out; /* Плавный переход */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+button {
+    background-color: #ffa6c9; /* Базовый цвет кнопки */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Эффекты для изображений проектов */
+img:hover {
+    transform: scale(1.05); /* Увеличение изображения */
+    transition: transform 0.3s ease-in-out; /* Плавный эффект увеличения */
+    filter: brightness(1.2); /* Увеличение яркости */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Добавление тени */
+}
+
+/* Специфично для изображений проектов */
+.conteneur2 img:hover, .blog-container img:hover {
+    transform: scale(1.1); /* Большее увеличение для проектов */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(1.2) contrast(1.1); /* Яркость и контрастность */
+    border: 3px solid violet; /* Фиолетовая рамка */
+    border-radius: 10px; /* Скругленные углы */
+}
+
+/* Эффекты для ссылок "Read More" */
+.read-more:hover {
+    color: #ff69b4; /* Изменение цвета текста */
+    text-decoration: underline; /* Добавление подчеркивания */
+    transform: scale(1.05); /* Легкое увеличение */
+    transition: all 0.3s ease-in-out;}
